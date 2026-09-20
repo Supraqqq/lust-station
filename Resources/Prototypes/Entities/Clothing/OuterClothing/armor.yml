@@ -196,6 +196,11 @@
     sprite: Clothing/OuterClothing/Vests/webvest.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Vests/webvest.rsi
+  # Lust edit - тактический жилет из аплинка занимает в сумке 2x2 (4 клетки) вместо 3x4 (12 клеток)
+  - type: Item
+    size: Normal
+    shape:
+    - 0,0,1,1
   - type: Pierceable
     level: Metal
   - type: Armor
@@ -203,14 +208,13 @@
       coefficients:
         Blunt: 0.6 #ballistic plates = better protection
         Slash: 0.6
-        Piercing: 0.3
-        Heat: 0.9
+        Piercing: 0.2 # Lust edit - повышение защиты колющим: 70% → 80% (0.3 -> 0.2)
+        Heat: 0.8 # Lust edit - повышение защиты термических: 10% → 20% (0.9 -> 0.8)
   - type: StaticPrice
     price: 1500
-  # Sunrise-Start
+  # Lust edit - резист стамине: 35% защита от изматывания (0.65 коэф.)
   - type: StaminaResistance
-    damageCoefficient: 0.8
-  # Sunrise-End
+    damageCoefficient: 0.65
 
 #Elite web vest
 - type: entity
