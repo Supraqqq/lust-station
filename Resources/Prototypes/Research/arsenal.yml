@@ -88,36 +88,6 @@
   - Security
 
 - type: technology
-  id: UraniumMunitions
-  name: research-technology-uranium-munitions
-  icon:
-    sprite: Objects/Materials/Sheets/other.rsi
-    state: uranium
-  discipline: Arsenal
-  tier: 1
-  cost: 7500
-  recipeUnlocks:
-  - MagazineRifleUranium
-  - MagazinePistolUranium
-  - MagazinePistolSubMachineGunUranium
-  - MagazineLightRifleUranium
-  - SpeedLoaderMagnumUranium
-  - MagazineBoxPistolUranium
-  - MagazineBoxMagnumUranium
-  - MagazineBoxLightRifleUranium
-  - MagazineBoxRifleUranium
-  - BoxShotgunUranium
-  - MagazinePistolSubMachineGunTopMountedUranium #Sunrise-Add
-  - MagazinePistolHighCapacityUranium # Sunrise-Add
-  - MagazineRifleHeavyUranium # Sunrise-Add
-  - MagazineBoxHeavyRifleUranium # Sunrise-Add
-  - MagazineRifleBoxUranium # Sunrise-Add
-  - MagazineLightRifleBeltBoxUranium # Sunrise-Add
-  - SpeedLoaderShotgunUranium # Sunrise-Add
-  radioChannels: # Sunrise-Add
-  - Security
-
-- type: technology
   id: AdvancedRiotControl
   name: research-technology-advanced-riot-control
   icon:
@@ -252,6 +222,37 @@
   cost: 10000
   recipeUnlocks:
   - ClothingBackpackHarmpack
+  radioChannels: # Sunrise-Add
+  - Security
+
+# Lust edit - урановые боеприпасы перенесены с tier 1 на tier 2
+- type: technology
+  id: UraniumMunitions
+  name: research-technology-uranium-munitions
+  icon:
+    sprite: Objects/Materials/Sheets/other.rsi
+    state: uranium
+  discipline: Arsenal
+  tier: 2
+  cost: 7500
+  recipeUnlocks:
+  - MagazineRifleUranium
+  - MagazinePistolUranium
+  - MagazinePistolSubMachineGunUranium
+  - MagazineLightRifleUranium
+  - SpeedLoaderMagnumUranium
+  - MagazineBoxPistolUranium
+  - MagazineBoxMagnumUranium
+  - MagazineBoxLightRifleUranium
+  - MagazineBoxRifleUranium
+  - BoxShotgunUranium
+  - MagazinePistolSubMachineGunTopMountedUranium #Sunrise-Add
+  - MagazinePistolHighCapacityUranium # Sunrise-Add
+  - MagazineRifleHeavyUranium # Sunrise-Add
+  - MagazineBoxHeavyRifleUranium # Sunrise-Add
+  - MagazineRifleBoxUranium # Sunrise-Add
+  - MagazineLightRifleBeltBoxUranium # Sunrise-Add
+  - SpeedLoaderShotgunUranium # Sunrise-Add
   radioChannels: # Sunrise-Add
   - Security
 
